@@ -1,0 +1,4 @@
+name: Border
+version: '${project.version}'
+main: jp.houlab.mochidsuki.border.Main
+api-version: '1.21'
