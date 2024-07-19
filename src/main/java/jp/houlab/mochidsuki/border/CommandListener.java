@@ -13,9 +13,9 @@ public class CommandListener implements CommandExecutor {
                 BorderInfo.setCenterX(Double.parseDouble(strings[1]));
                 BorderInfo.setCenterZ(Double.parseDouble(strings[2]));
                 BorderInfo.setNowPX(BorderInfo.getCenterX() + Double.parseDouble(strings[3]));
-                BorderInfo.setNowMX(BorderInfo.getCenterX() + Double.parseDouble(strings[3]));
+                BorderInfo.setNowMX(BorderInfo.getCenterX() - Double.parseDouble(strings[3]));
                 BorderInfo.setNowPZ(BorderInfo.getCenterZ() + Double.parseDouble(strings[3]));
-                BorderInfo.setNowMZ(BorderInfo.getCenterZ() + Double.parseDouble(strings[3]));
+                BorderInfo.setNowMZ(BorderInfo.getCenterZ() - Double.parseDouble(strings[3]));
 
             }
             if(strings[0].equalsIgnoreCase("getnow")){
