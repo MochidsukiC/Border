@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Border.iml" filepath="$PROJECT_DIR$/.idea/Border.iml" />
+      <module fileurl="file://$PROJECT_DIR$/border.iml" filepath="$PROJECT_DIR$/border.iml" />
     </modules>
   </component>
 </project>

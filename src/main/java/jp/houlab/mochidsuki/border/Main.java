@@ -9,6 +9,7 @@ public final class Main extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
 
+        getCommand("debug").setExecutor(new CommandListener());
     }
 
     @Override

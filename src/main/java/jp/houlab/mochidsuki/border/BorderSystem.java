@@ -2,13 +2,13 @@ package jp.houlab.mochidsuki.border;
 
 import java.util.Random;
 
-import jp.houlab.mochidsuki.border.V.*;
 
-import static jp.houlab.mochidsuki.border.V.center;
+import static jp.houlab.mochidsuki.border.V.*;
 
 public class BorderSystem {
     public static void run(){
 
+        /*
         double[] speed = new double[4];
         double radius=0;
         double radiusk=0;
@@ -108,5 +108,7 @@ public class BorderSystem {
         speed[1] = (B.target[1] - now[1])/rtime/20;
         speed[2] = (B.target[2] - now[2])/rtime/20;
         speed[3] = (B.target[3] - now[3])/rtime/20;
+
+         */
     }
 }
