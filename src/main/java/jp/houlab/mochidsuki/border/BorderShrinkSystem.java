@@ -1,14 +1,68 @@
 package jp.houlab.mochidsuki.border;
 
-import java.util.Random;
+import com.comphenix.protocol.PacketType;
+import com.comphenix.protocol.ProtocolLibrary;
+import com.comphenix.protocol.events.PacketContainer;
+import org.bukkit.Location;
+import org.bukkit.entity.Player;
+import org.bukkit.scheduler.BukkitRunnable;
+
+import jp.houlab.mochidsuki.border.BorderInfo.*;
+import org.bukkit.util.Transformation;
+
+import java.lang.reflect.InvocationTargetException;
+
+import static jp.houlab.mochidsuki.border.Main.*;
 
 
-import static jp.houlab.mochidsuki.border.V.*;
+public class BorderShrinkSystem extends BukkitRunnable {
+    private int time;
+    private double nextX;// 次の中心x m/t
+    private double nextZ;// 次の中心z m/t
+    private double nextRadius;// 次半径
+    private double speedX;// 中心のx移動速度 m/t
+    private double speedZ;// 中心のz移動速度 m/t
+    private double speedRadius;// 半径縮小速度 m/t
 
-public class BorderSystem {
-    public static void run(){
+    public BorderShrinkSystem(int time,double nextX,double nextZ,double nextRadius) {
+        this.time = time;
+        this.nextX = nextX;
+        this.nextZ = nextZ;
+        this.nextRadius = nextRadius;
 
-        /*
+        this.speedX = (this.nextX - BorderInfo.getNowCenterX())/(this.time);
+        this.speedZ = (this.nextZ - BorderInfo.getNowCenterZ())/(this.time);
+        this.speedRadius = (BorderInfo.getNowRadius() - this.nextRadius)/(this.time);
+    }
+    public void run(){
+        //中心の更新
+        BorderInfo.setNowCenterX(BorderInfo.getNowCenterX()+speedX);
+        BorderInfo.setNowCenterZ(BorderInfo.getNowCenterZ()+speedZ);
+        //各辺の更新
+        BorderInfo.setNowPX(BorderInfo.getNowCenterX()+nextRadius);
+        BorderInfo.setNowMX(BorderInfo.getNowCenterX()-nextRadius);
+        BorderInfo.setNowPZ(BorderInfo.getNowCenterZ()+nextRadius);
+        BorderInfo.setNowMZ(BorderInfo.getNowCenterZ()-nextRadius);
+        //ブロックディスプレイの更新
+
+
+        time--;
+        if(time == 0){
+            cancel();
+        }
+    }
+    static public void Initializer(double centerX,double centerZ,double radius){
+        BorderInfo.setNowCenterX(centerX);
+        BorderInfo.setNowCenterZ(centerZ);
+        BorderInfo.setNowRadius(radius);
+        BorderInfo.setNowPX(centerX+radius);
+        BorderInfo.setNowMX(centerX-radius);
+        BorderInfo.setNowPZ(centerZ+radius);
+        BorderInfo.setNowMZ(centerZ-radius);
+    }
+}
+
+/*
         double[] speed = new double[4];
         double radius=0;
         double radiusk=0;
@@ -110,5 +164,4 @@ public class BorderSystem {
         speed[3] = (B.target[3] - now[3])/rtime/20;
 
          */
-    }
-}
+

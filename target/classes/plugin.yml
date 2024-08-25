@@ -1,0 +1,12 @@
+name: Border
+version: '1.0-SNAPSHOT'
+main: jp.houlab.mochidsuki.border.Main
+api-version: '1.20'
+
+commands:
+  debug:
+    aliases: [debug]
+    description: BRC管理コマンド
+    permission: border.command.debug
+    permission-message: Permission denied
+    usage: gr reload
