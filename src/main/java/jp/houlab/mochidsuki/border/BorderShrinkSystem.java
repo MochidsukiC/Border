@@ -43,6 +43,8 @@ public class BorderShrinkSystem extends BukkitRunnable {
         BorderInfo.setNowMX(BorderInfo.getNowCenterX()-nextRadius);
         BorderInfo.setNowPZ(BorderInfo.getNowCenterZ()+nextRadius);
         BorderInfo.setNowMZ(BorderInfo.getNowCenterZ()-nextRadius);
+
+        BorderInfo.setNowRadius(BorderInfo.getNowRadius()-speedRadius);
         //ブロックディスプレイの更新
 
 

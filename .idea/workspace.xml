@@ -4,15 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be02a0a4-12fe-41e2-83a7-dac2f0b8d596" name="変更" comment="from Mochidsuki Mini PC&#10;change CommandListener">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderWallShower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="be02a0a4-12fe-41e2-83a7-dac2f0b8d596" name="変更" comment="from Mochidsuki Mini PC&#10;create BorderWallShower COMPLETE (Bug 1 present)">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/ArrowMetadataListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/EveryTicks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/packetwrapper/AbstractPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/packetwrapper/EasyMetadataPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/packetwrapper/IntEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/packetwrapper/WrapperPlayServerEntityMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/packetwrapper/WrapperPlayServerSpawnEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderShrinkSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/CommandListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/CommandListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/V.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderShrinkSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderShrinkSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderWallShower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderWallShower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/border-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/border-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/BorderInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/BorderInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/BorderShrinkSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/BorderShrinkSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/CommandListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/CommandListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-border-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-border-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +67,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Maven.border [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.border [deploy].executor&quot;: &quot;Debug&quot;,
     &quot;Maven.border [package].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -71,7 +84,12 @@
     &quot;リモート JVM デバッグ.名前未設定.executor&quot;: &quot;Debug&quot;
   }
 }</component>
-  <component name="RunManager" selected="リモート JVM デバッグ.名前未設定">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jp.houlab.mochidsuki.border" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Maven.border [package]">
     <configuration name="border [deploy]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -172,7 +190,13 @@
       <workItem from="1721373282016" duration="2624000" />
       <workItem from="1722092320712" duration="341000" />
       <workItem from="1722092671333" duration="7457000" />
-      <workItem from="1724568680663" duration="15860000" />
+      <workItem from="1724568680663" duration="32911000" />
+      <workItem from="1724661429405" duration="7356000" />
+      <workItem from="1724733891646" duration="12182000" />
+      <workItem from="1724747805920" duration="12707000" />
+      <workItem from="1724824162171" duration="1796000" />
+      <workItem from="1724831726414" duration="1149000" />
+      <workItem from="1724833550372" duration="6420000" />
     </task>
     <task id="LOCAL-00001" summary="from Mochidsuki Mini PC&#10;remove public values&#10;add BorderInfo&#10;change CommandListener">
       <option name="closed" value="true" />
@@ -190,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721375909336</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="from Mochidsuki Mini PC&#10;create BorderWallShower COMPLETE (Bug 1 present)">
+      <option name="closed" value="true" />
+      <created>1724593000415</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724593000415</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,15 +231,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="from Mochidsuki Mini PC&#10;remove public values&#10;add BorderInfo&#10;change CommandListener" />
     <MESSAGE value="from Mochidsuki Mini PC&#10;change CommandListener" />
-    <option name="LAST_COMMIT_MESSAGE" value="from Mochidsuki Mini PC&#10;change CommandListener" />
+    <MESSAGE value="from Mochidsuki Mini PC&#10;create BorderWallShower COMPLETE (Bug 1 present)" />
+    <option name="LAST_COMMIT_MESSAGE" value="from Mochidsuki Mini PC&#10;create BorderWallShower COMPLETE (Bug 1 present)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderWallShower.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="1" />
+          <line>162</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -25,6 +25,7 @@ public final class Main extends JavaPlugin {
         plugin = this;
 
         new BorderWallShower().runTaskTimer(this, 1L, 1L);
+        new EveryTicks().runTaskTimer(this, 1L, 1L);
     }
 
     @Override

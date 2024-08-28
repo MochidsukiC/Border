@@ -13,7 +13,7 @@ public class BorderInfo {
     static private double targetMX;
     static private double targetPZ;
     static private double targetMZ;
-    static private double nowRadius;
+    static private double nowRadius; //リアルタイムな半径m
 
     static public double getNowPX(){return nowPX;}
     static public double getNowMX(){return nowMX;}
