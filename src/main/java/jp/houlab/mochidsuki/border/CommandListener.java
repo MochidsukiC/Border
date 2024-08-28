@@ -12,6 +12,9 @@ public class CommandListener implements CommandExecutor {
             BorderShrinkSystem.Initializer(0,0,500);
             new BorderShrinkSystem(1200,100,100,200).runTaskTimer(Main.plugin,0,1);
         }
+        if(s.equalsIgnoreCase("ddamage")){
+            BorderDamager.setDamage(Float.parseFloat(strings[0]));
+        }
 
         return false;
     }

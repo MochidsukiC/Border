@@ -1,5 +1,6 @@
 package jp.houlab.mochidsuki.border;
 
+import net.kyori.adventure.title.Title;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -21,11 +22,12 @@ public final class Main extends JavaPlugin {
         // Plugin startup logic
 
         getCommand("debug").setExecutor(new CommandListener());
+        getCommand("ddamage").setExecutor(new CommandListener());
         world = getServer().getWorld("world");
         plugin = this;
 
         new BorderWallShower().runTaskTimer(this, 1L, 1L);
-        new EveryTicks().runTaskTimer(this, 1L, 1L);
+        new BorderDamager().runTaskTimer(this, 1L, 20L);
     }
 
     @Override
