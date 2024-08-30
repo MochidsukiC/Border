@@ -38,9 +38,8 @@ public class BorderDamager extends BukkitRunnable {
                     if (!player.hasPotionEffect(PotionEffectType.FIRE_RESISTANCE)) {
                         if (player.getHealth() - damage > 0) {
                             player.setHealth(player.getHealth() - damage);
-                            player.sendMessage(player.getHealth() + "");
                         } else {
-                            player.setHealth(0);
+                            player.damage(damage);
                         }
                     } else {
                         int duration = player.getPotionEffect(PotionEffectType.FIRE_RESISTANCE).getDuration();

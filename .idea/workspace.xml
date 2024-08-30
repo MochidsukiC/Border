@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be02a0a4-12fe-41e2-83a7-dac2f0b8d596" name="変更" comment="from Mochidsuki Mini PC&#10;add BorderShower COMPLETE">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderDamager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderWallShower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderWallShower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderDamager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderDamager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderShrinkSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderShrinkSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/CommandListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/CommandListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/EveryTicks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/border-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/border-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/BorderShrinkSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/BorderShrinkSystem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/CommandListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/CommandListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/original-border-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-border-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,31 +53,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.border [deploy].executor&quot;: &quot;Debug&quot;,
-    &quot;Maven.border [package].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mochi/IdeaProjects/Border&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.mocha.mocha_node_package_dir&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;リモート JVM デバッグ.名前未設定.executor&quot;: &quot;Debug&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.border [deploy].executor": "Debug",
+    "Maven.border [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Mochi/IdeaProjects/Border",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.mocha.mocha_node_package_dir": "",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true",
+    "リモート JVM デバッグ.名前未設定 (1).executor": "Debug",
+    "リモート JVM デバッグ.名前未設定.executor": "Debug"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="jp.houlab.mochidsuki.border" />
     </key>
   </component>
-  <component name="RunManager" selected="リモート JVM デバッグ.名前未設定">
+  <component name="RunManager" selected="リモート JVM デバッグ.名前未設定 (1)">
     <configuration name="border [deploy]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -142,6 +139,20 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="名前未設定 (1)" type="Remote" nameIsGenerated="true">
+      <module name="border" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="35.76.92.160" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="名前未設定" type="Remote" nameIsGenerated="true">
       <module name="border" />
       <option name="USE_SOCKET_TRANSPORT" value="true" />
@@ -159,6 +170,7 @@
     <list>
       <item itemvalue="Maven.border [package]" />
       <item itemvalue="Maven.border [deploy]" />
+      <item itemvalue="リモート JVM デバッグ.名前未設定 (1)" />
       <item itemvalue="リモート JVM デバッグ.名前未設定" />
     </list>
   </component>
@@ -189,6 +201,8 @@
       <workItem from="1724824162171" duration="1796000" />
       <workItem from="1724831726414" duration="1149000" />
       <workItem from="1724833550372" duration="12659000" />
+      <workItem from="1724896322818" duration="10182000" />
+      <workItem from="1725007946878" duration="8861000" />
     </task>
     <task id="LOCAL-00001" summary="from Mochidsuki Mini PC&#10;remove public values&#10;add BorderInfo&#10;change CommandListener">
       <option name="closed" value="true" />
@@ -238,20 +252,14 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderWallShower.java</url>
-          <line>162</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderDamager.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderDamager.java</url>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderInfo.java</url>
           <line>49</line>
-          <option name="timeStamp" value="11" />
+          <properties class="jp.houlab.mochidsuki.border.BorderInfo" method="setNowRadius">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

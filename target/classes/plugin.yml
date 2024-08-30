@@ -10,3 +10,10 @@ commands:
     permission: border.command.debug
     permission-message: Permission denied
     usage: gr reload
+
+  ddamage:
+    aliases: [ddamage]
+    description: BRC管理コマンド
+    permission: border.command.ddamage
+    permission-message: Permission denied
+    usage: gr reload
