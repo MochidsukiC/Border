@@ -15,7 +15,7 @@ public class CommandListener implements CommandExecutor {
             ((Player) commandSender).sendMessage(((Player)commandSender).getLocation().getBlockX()+"|"+((Player)commandSender).getLocation().getBlockZ());
         }
         if(s.equalsIgnoreCase("ddamage")){
-            BorderDamager.setDamage(Float.parseFloat(strings[0]));
+                BorderDamager.setDamage(Float.parseFloat(strings[0]));
         }
 
         return false;

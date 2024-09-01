@@ -28,6 +28,7 @@ public final class Main extends JavaPlugin {
 
         new BorderWallShower().runTaskTimer(this, 1L, 1L);
         new BorderDamager().runTaskTimer(this, 1L, 20L);
+        BorderDamager.setPower(false);
     }
 
     @Override
