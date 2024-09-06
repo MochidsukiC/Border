@@ -16,6 +16,10 @@ import java.time.Duration;
 
 import static jp.houlab.mochidsuki.border.Main.plugin;
 
+/**
+ * ボーダーの範囲外にいるプレイヤーに対して警告表示とダメージを与えるクラス
+ * @author Mochidsuki
+ */
 public class BorderDamager extends BukkitRunnable {
 
     static private float damage;
@@ -62,11 +66,29 @@ public class BorderDamager extends BukkitRunnable {
         }
     }
 
+    /**
+     * ボーダーダメージを設定する
+     * @param damage ダメージ値
+     */
     static public void setDamage(float damage){
         BorderDamager.damage = damage;
     }
+
+    /**
+     * ボーダーダメージを取得する
+     * @return ダメージ値
+     */
     static public float getDamage(){ return damage; }
 
+    /**
+     * ボーダーのオンオフを設定する
+     * @param power オンオフ。オンの場合はtrue
+     */
     static public void setPower(boolean power){BorderDamager.power = power;}
+
+    /**
+     * ボーダーのオンオフを取得
+     * @return オンオフ。オンの場合はtrue
+     */
     static public boolean isPower(){ return power; }
 }
