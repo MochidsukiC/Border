@@ -21,8 +21,11 @@ public final class Main extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
 
+        //コマンドリスナーを登録
         getCommand("debug").setExecutor(new CommandListener());
         getCommand("ddamage").setExecutor(new CommandListener());
+
+        //
         world = getServer().getWorld("world");
         plugin = this;
 

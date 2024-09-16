@@ -16,30 +16,39 @@ import java.util.*;
 import java.util.HashMap;
 import java.util.UUID;
 
-import jp.houlab.mochidsuki.border.packetwrapper.*;
-
 import static jp.houlab.mochidsuki.border.Main.plugin;
 import static jp.houlab.mochidsuki.border.Main.world;
 
+/**
+ * ボーダーの壁を表示するクラス
+ * @author Mochidsuki
+ */
 public class BorderWallShower extends BukkitRunnable {
 
     public List<BlockDisplay> px = new ArrayList<>();
     public List<BlockDisplay> mx = new ArrayList<>();
     public List<BlockDisplay> pz = new ArrayList<>();
     public List<BlockDisplay> mz = new ArrayList<>();
+
+    /**
+     * 壁をコントロールするメソッドを呼び出す
+     */
     @Override
     public void run() {
-
-
         controlWall(BorderInfo.getNowPX(),BorderInfo.getNowMZ(),BorderInfo.getNowPZ(),"x",px);
         controlWall(BorderInfo.getNowMX(),BorderInfo.getNowMZ(),BorderInfo.getNowPZ(),"x",mx);
         controlWall(BorderInfo.getNowPZ(),BorderInfo.getNowMX(),BorderInfo.getNowPX(),"z",pz);
         controlWall(BorderInfo.getNowMZ(),BorderInfo.getNowMX(),BorderInfo.getNowPX(),"z",mz);
-
-
     }
 
-
+    /**
+     * 壁のサイズと座標を計算し、生成、テレポート、サイズ設定、削除を行う
+     * @param shaft 軸の座標
+     * @param width 横幅のマイナス方向の座標
+     * @param widthTop 横幅のプラス方向の座標
+     * @param shaftCode 軸の方向を指定
+     * @param blockDisplays ブロックティスプレイを保存し、次の処理に渡すリスト
+     */
     private void controlWall(final double shaft,double width,double widthTop,String shaftCode,List<BlockDisplay> blockDisplays) {
         final int longK = 158; //1ブロックディスプレイの長さ
         double widthNow = width;
