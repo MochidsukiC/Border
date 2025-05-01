@@ -30,6 +30,17 @@ public class BorderWallShower extends BukkitRunnable {
     public List<BlockDisplay> pz = new ArrayList<>();
     public List<BlockDisplay> mz = new ArrayList<>();
 
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    private int height;
+
+    public BorderWallShower(int height) {
+        this.height = height;
+    }
+
+
     /**
      * 壁をコントロールするメソッドを呼び出す
      */
@@ -39,7 +50,16 @@ public class BorderWallShower extends BukkitRunnable {
         controlWall(BorderInfo.getNowMX(),BorderInfo.getNowMZ(),BorderInfo.getNowPZ(),"x",mx);
         controlWall(BorderInfo.getNowPZ(),BorderInfo.getNowMX(),BorderInfo.getNowPX(),"z",pz);
         controlWall(BorderInfo.getNowMZ(),BorderInfo.getNowMX(),BorderInfo.getNowPX(),"z",mz);
+
+        /*
+        Issueメモ
+        折り返しが生成されていない。
+         */
     }
+
+
+
+
 
     /**
      * 壁のサイズと座標を計算し、生成、テレポート、サイズ設定、削除を行う
@@ -53,6 +73,7 @@ public class BorderWallShower extends BukkitRunnable {
         final int longK = 158; //1ブロックディスプレイの長さ
         double widthNow = width;
         int i = 0;
+
         for(;widthNow < widthTop;i++) {
             if(i*2 < blockDisplays.size()) {
                 BlockDisplay blockDisplay = blockDisplays.get(i*2);
@@ -75,14 +96,14 @@ public class BorderWallShower extends BukkitRunnable {
                     z = shaft;
                 }
                 Transformation transformation = blockDisplay.getTransformation();
-
-                if(shaftCode.equals("x")) {
+                if (shaftCode.equals("x")) {
                     sx = 1;
                     sz = longK;
-                }else if(shaftCode.equals("z")) {
+                } else if (shaftCode.equals("z")) {
                     sx = longK;
                     sz = 1;
                 }
+
 
                 widthNow = widthNow+longK;
 
@@ -117,26 +138,28 @@ public class BorderWallShower extends BukkitRunnable {
 
                     if(shaftCode.equals("x")) {
                         sx1 = 1;
-                        sz1 = (widthTop-widthNow+longK)*-1; //widthTop - (width - longK)
+                        sz1 = (widthTop - widthNow + longK)*-1;
                     }else if(shaftCode.equals("z")) {
-                        sx1 = (widthTop-widthNow+longK)*-1; //widthTop - (width - longK)
+                        sx1 = (widthTop - widthNow + longK)*-1;
                         sz1 = 1;
                     }
 
                     if(shaftCode.equals("x")) {
-                        sz = (widthTop-widthNow+longK); //widthTop - (width - longK)
+                        sz = (widthTop - widthNow + longK);
                     }else if(shaftCode.equals("z")) {
-                        sx = (widthTop-widthNow+longK); //widthTop - (width - longK)
+                        sx = (widthTop - widthNow + longK);
                     }
                 }
 
                 Transformation transformation1 = blockDisplay1.getTransformation();
 
-                world.loadChunk(new Location(world, x, -70, z).getChunk());
-                world.loadChunk(new Location(world, x1, -70, z1).getChunk());
+                world.loadChunk(blockDisplay.getChunk());
+                world.loadChunk(blockDisplay1.getChunk());
+                world.loadChunk(new Location(world, x, height, z).getChunk());
+                world.loadChunk(new Location(world, x1, height, z1).getChunk());
 
-                blockDisplay.teleportAsync(new Location(world, x, -70, z));
-                blockDisplay1.teleportAsync(new Location(world, x1, -70, z1));
+                blockDisplay.teleportAsync(new Location(world, x, height, z));
+                blockDisplay1.teleportAsync(new Location(world, x1, height, z1));
 
                 transformation.getScale().set(sx,400,sz);
                 blockDisplay.setTransformation(transformation);
@@ -168,9 +191,10 @@ public class BorderWallShower extends BukkitRunnable {
         }
 
         if(blockDisplays.size() > i*2) {
-            for(int ii = i; ii < blockDisplays.size(); ii++) {
+            for(int ii = i+1; ii < blockDisplays.size(); ii++) {
                 blockDisplays.get(ii).setBlock(Bukkit.createBlockData(Material.EMERALD_BLOCK));
                 blockDisplays.get(ii).remove();
+                blockDisplays.remove(ii);
             }
         }
 

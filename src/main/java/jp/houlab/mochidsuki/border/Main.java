@@ -16,6 +16,7 @@ public final class Main extends JavaPlugin {
 
     static public World world;
     static public Plugin plugin;
+    static public BorderWallShower borderWallShower;
 
     @Override
     public void onEnable() {
@@ -29,7 +30,9 @@ public final class Main extends JavaPlugin {
         world = getServer().getWorld("world");
         plugin = this;
 
-        new BorderWallShower().runTaskTimer(this, 1L, 1L);
+        borderWallShower = new BorderWallShower(-70);
+        borderWallShower.runTaskTimer(this, 1L, 1L);
+
         new BorderDamager().runTaskTimer(this, 1L, 20L);
         BorderDamager.setPower(false);
     }

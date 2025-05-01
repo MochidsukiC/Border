@@ -71,7 +71,7 @@ public class BorderShrinkSystem extends BukkitRunnable {
      * @param centerZ 中心のz座標
      * @param radius 半径
      */
-    static public void Initializer(double centerX,double centerZ,double radius){
+    static public void Initializer(double centerX,double centerZ,double radius,int height){
         BorderInfo.setNowCenterX(centerX);
         BorderInfo.setNowCenterZ(centerZ);
         BorderInfo.setNowRadius(radius);
@@ -79,5 +79,7 @@ public class BorderShrinkSystem extends BukkitRunnable {
         BorderInfo.setNowMX(centerX-radius);
         BorderInfo.setNowPZ(centerZ+radius);
         BorderInfo.setNowMZ(centerZ-radius);
+
+        borderWallShower.setHeight(height);
     }
 }

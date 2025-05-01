@@ -22,9 +22,10 @@ public class CommandListener implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
         if(s.equalsIgnoreCase("debug")){//ボーダーサイズを手動で設定する
-            BorderShrinkSystem.Initializer(0,0,500);
-            new BorderShrinkSystem(20,((Player)commandSender).getX(),((Player)commandSender).getZ(),20).runTaskTimer(Main.plugin,0,1);
+            BorderShrinkSystem.Initializer(0,0, Double.parseDouble(strings[0]),-70);
+            new BorderShrinkSystem(200,((Player)commandSender).getX(),((Player)commandSender).getZ(),20).runTaskTimer(Main.plugin,0,1);
             ((Player) commandSender).sendMessage(((Player)commandSender).getLocation().getBlockX()+"|"+((Player)commandSender).getLocation().getBlockZ());
+
         }
         if(s.equalsIgnoreCase("ddamage")){//ボーダーダメージを手動で指定する
                 BorderDamager.setDamage(Float.parseFloat(strings[0]));
