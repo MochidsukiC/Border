@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be02a0a4-12fe-41e2-83a7-dac2f0b8d596" name="変更" comment="from Mochidsuki Mini PC&#10;add Documentation Comment @BorderDamager.java,BorderInfo.java&#10;remove Unused Code">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="be02a0a4-12fe-41e2-83a7-dac2f0b8d596" name="変更" comment="from Mochidsuki Mini PC&#10;fix Border Showing Issue (Wall End Parts Invisible Issue)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderShrinkSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderShrinkSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderWallShower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderWallShower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/CommandListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/CommandListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/border-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/border-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/BorderInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/BorderInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/BorderShrinkSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/BorderShrinkSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/CommandListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/CommandListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jp/houlab/mochidsuki/border/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/original-border-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-border-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,12 +32,12 @@
     &quot;assignee&quot;: &quot;MochidsukiC&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MochidsukiC/Border.git",
-    "accountId": "1d61cdcd-b388-425a-9e02-95839793b341"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MochidsukiC/Border.git&quot;,
+    &quot;accountId&quot;: &quot;1d61cdcd-b388-425a-9e02-95839793b341&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -56,7 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Maven.border [deploy].executor": "Debug",
+    "Maven.border [deploy].executor": "Run",
     "Maven.border [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -213,7 +205,8 @@
       <workItem from="1725609007954" duration="5348000" />
       <workItem from="1725850636204" duration="595000" />
       <workItem from="1726381616044" duration="70000" />
-      <workItem from="1746107579327" duration="7646000" />
+      <workItem from="1746107579327" duration="11935000" />
+      <workItem from="1747460058735" duration="7968000" />
     </task>
     <task id="LOCAL-00001" summary="from Mochidsuki Mini PC&#10;remove public values&#10;add BorderInfo&#10;change CommandListener">
       <option name="closed" value="true" />
@@ -255,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725612860266</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="from Mochidsuki Mini PC&#10;fix Border Showing Issue (Wall End Parts Invisible Issue)">
+      <option name="closed" value="true" />
+      <created>1746119274777</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746119274777</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,15 +268,16 @@
     <MESSAGE value="from Mochidsuki Mini PC&#10;create BorderWallShower COMPLETE (Bug 1 present)" />
     <MESSAGE value="from Mochidsuki Mini PC&#10;add BorderShower COMPLETE" />
     <MESSAGE value="from Mochidsuki Mini PC&#10;add Documentation Comment @BorderDamager.java,BorderInfo.java&#10;remove Unused Code" />
-    <option name="LAST_COMMIT_MESSAGE" value="from Mochidsuki Mini PC&#10;add Documentation Comment @BorderDamager.java,BorderInfo.java&#10;remove Unused Code" />
+    <MESSAGE value="from Mochidsuki Mini PC&#10;fix Border Showing Issue (Wall End Parts Invisible Issue)" />
+    <option name="LAST_COMMIT_MESSAGE" value="from Mochidsuki Mini PC&#10;fix Border Showing Issue (Wall End Parts Invisible Issue)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/jp/houlab/mochidsuki/border/BorderWallShower.java</url>
-          <line>166</line>
-          <option name="timeStamp" value="32" />
+          <line>174</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
